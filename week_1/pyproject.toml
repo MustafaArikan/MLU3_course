@@ -1,0 +1,15 @@
+[project]
+name = "week-1"
+version = "0.1.0"
+description = "MLU3 week 1 - clustering warm-up with synthetic blobs"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "ipywidgets>=8.1.8",
+    "jupyterlab>=4.5.5",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=3.0.1",
+    "scikit-learn>=1.8.0",
+]
