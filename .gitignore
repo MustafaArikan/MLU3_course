@@ -3,4 +3,4 @@
 __pycache__/
 *.pyc
 *.npz
-week_0/data/
+week_*/data/
