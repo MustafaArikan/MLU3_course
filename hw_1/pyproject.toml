@@ -1,0 +1,30 @@
+[project]
+name = "hw-1"
+version = "0.1.0"
+description = "MLU3 assignment 1 - clustering UC Merced aerial scenes with ViT embeddings"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=3.0.0",
+    "ipykernel>=7.2.0",
+    "ipywidgets>=8.1.8",
+    "jupyterlab>=4.5.5",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=3.0.1",
+    "pillow>=13.0.0",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.14.0",
+    "torch",
+    "torchvision",
+    "transformers>=5.20.2",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
