@@ -1,0 +1,30 @@
+[project]
+name = "hw-2"
+version = "0.1.0"
+description = "MLU3 assignment 2 - multimodal embeddings and hierarchical clustering"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=3.0.0",
+    "ipykernel>=7.2.0",
+    "ipywidgets>=8.1.8",
+    "jupyterlab>=4.5.5",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=3.1.1",
+    "pillow>=13.0.0",
+    "scikit-learn>=1.9.1",
+    "sentence-transformers>=6.3.0",
+    "torch==2.10.0+cu128",
+    "torchvision==0.25.0+cu128",
+    "transformers>=5.23.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
